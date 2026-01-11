@@ -19,6 +19,7 @@ export default function VideoEditorPortfolio() {
       title: "Mahito (Shoko Remake)",
       category: "Music Sync Edit",
       year: "2025",
+      software: "After Effects",
       thumbnail: "https://img.youtube.com/vi/M_tSvfBcIBU/hqdefault.jpg",
       link: "https://www.youtube.com/shorts/M_tSvfBcIBU",
       description: "Transitions, masking, VFX with CRT effects synced to music"
@@ -28,6 +29,7 @@ export default function VideoEditorPortfolio() {
       title: "Animation Practice (Shoko Remake)",
       category: "2D Animation",
       year: "2025",
+      software: "After Effects | Photopea",
       thumbnail: "https://img.youtube.com/vi/wbIOHrKOjIY/maxresdefault.jpg",
       link: "https://www.youtube.com/shorts/wbIOHrKOjIY",
       description: "Manga character animation using puppet tool and layering"
@@ -37,6 +39,7 @@ export default function VideoEditorPortfolio() {
       title: "Grimes",
       category: "Motion Tracking",
       year: "2026",
+      software: "After Effects",
       thumbnail: "https://img.youtube.com/vi/1GWAjpbPnUU/maxresdefault.jpg",
       link: "https://www.youtube.com/shorts/1GWAjpbPnUU",
       description: "Mask tracking and rotoscoping for perspective shift"
@@ -46,6 +49,7 @@ export default function VideoEditorPortfolio() {
       title: "POV: When a Cat is Hungry",
       category: "Stylized Edit",
       year: "2026",
+      software: "After Effects",
       thumbnail: "https://img.youtube.com/vi/pveHhpRJWvc/hqdefault.jpg",
       link: "https://www.youtube.com/shorts/pveHhpRJWvc",
       description: "Backrooms inspired aesthetic with creative color correction"
@@ -55,6 +59,7 @@ export default function VideoEditorPortfolio() {
       title: "Car Edit",
       category: "3D Tracking",
       year: "2025",
+      software: "After Effects",
       thumbnail: "https://i.imgur.com/UZahD9j.jpeg",
       link: "https://www.instagram.com/p/DSyPwAFE1uQ/",
       description: "3D camera text tracking with speedramp and rotoscoping"
@@ -64,6 +69,7 @@ export default function VideoEditorPortfolio() {
       title: "Freeze Frame",
       category: "Creative Edit",
       year: "2025",
+      software: "After Effects",
       thumbnail: "https://i.imgur.com/ZBmcgFN.jpeg",
       link: "https://www.instagram.com/p/DS6PxV7CRH0/",
       description: "Time manipulation with morph transitions synced to beat"
@@ -73,6 +79,7 @@ export default function VideoEditorPortfolio() {
       title: "Wuthering Waves – Saving Pulls",
       category: "Gaming Content",
       year: "2025",
+      software: "DaVinci Resolve Studio",
       thumbnail: "https://img.youtube.com/vi/mjafBBZ97sw/maxresdefault.jpg",
       link: "https://www.youtube.com/watch?v=mjafBBZ97sw",
       description: "Gameplay with background music and seamless transitions"
@@ -82,6 +89,7 @@ export default function VideoEditorPortfolio() {
       title: "INTRO",
       category: "Gaming Content",
       year: "2025",
+      software: "DaVinci Resolve Studio",
       thumbnail: "https://img.youtube.com/vi/-QKYhcdNLCY/hqdefault.jpg",
       link: "https://www.youtube.com/watch?v=-QKYhcdNLCY",
       description: "Gameplay Introduction",
@@ -205,7 +213,9 @@ export default function VideoEditorPortfolio() {
                   <div className="text-xs tracking-wider text-purple-400 mb-2 group-hover:translate-x-2 transition-transform duration-300">{project.category}</div>
                   <h3 className="text-xl md:text-2xl font-light mb-1 group-hover:translate-x-2 transition-transform duration-300">{project.title}</h3>
                   <p className="text-xs text-gray-500 mb-2 group-hover:translate-x-2 transition-transform duration-300">{project.description}</p>
-                  <div className="text-sm text-gray-400 group-hover:translate-x-2 transition-transform duration-300">{project.year}</div>
+                  <div className="group-hover:translate-x-2 transition-transform duration-300">
+                  <div className="text-sm text-gray-400">{project.year}</div>{project.software && (<div className="text-[10px] tracking-widest text-purple-400/80 uppercase mt-1">Software: {project.software}</div>)}
+                </div>
                 </div>
               </a>
             ))}
