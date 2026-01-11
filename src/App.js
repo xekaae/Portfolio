@@ -283,7 +283,7 @@ export default function VideoEditorPortfolio() {
               {[
                 { icon: Instagram, href: "https://www.instagram.com/xeka.ae/" },
                 { icon: Youtube, href: "https://www.youtube.com/@xx3kae" },
-                { icon: Facebook, href: "https://www.facebook.com/janvherlucas.sarmiento/reels/" },
+                { icon: Facebook, href: "https://www.facebook.com/janvherlucas.sarmiento" },
                 { icon: Mail, href: "mailto:janvhersarmiento@gmail.com" }
               ].map((social, i) => (
                 <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className="w-11 h-11 md:w-12 md:h-12 rounded-full backdrop-blur-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white hover:text-black hover:scale-110 hover:-translate-y-1 transition-all duration-300">
