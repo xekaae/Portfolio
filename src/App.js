@@ -209,14 +209,34 @@ export default function VideoEditorPortfolio() {
                     <Play className="w-5 h-5 md:w-6 md:h-6 rotate-90 group-hover:rotate-0 transition-transform duration-500" fill="white" />
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <div className="text-xs tracking-wider text-purple-400 mb-2 group-hover:translate-x-2 transition-transform duration-300">{project.category}</div>
-                  <h3 className="text-xl md:text-2xl font-light mb-1 group-hover:translate-x-2 transition-transform duration-300">{project.title}</h3>
-                  <p className="text-xs text-gray-500 mb-2 group-hover:translate-x-2 transition-transform duration-300">{project.description}</p>
-                  <div className="group-hover:translate-x-2 transition-transform duration-300">
-                  <div className="text-sm text-gray-400">{project.year}</div>{project.software && (<div className="text-[10px] tracking-widest text-purple-400/80 uppercase mt-1">Software: {project.software}</div>)}
+                {/* Project Info Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-8">
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="text-[10px] sm:text-xs tracking-wider text-purple-400 mb-1">
+                    {project.category}
+                  </div>
+                  
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-light mb-1 leading-tight">
+                    {project.title}
+                  </h3>
+                  
+                  <p className="text-[10px] sm:text-xs text-gray-400 mb-2 line-clamp-2 sm:line-clamp-none">
+                    {project.description}
+                  </p>
+                  
+                  <div className="flex flex-col gap-0.5">
+                    <div className="text-[10px] sm:text-sm text-gray-500">
+                      {project.year}
+                    </div>
+                    
+                    {project.software && (
+                      <div className="text-[9px] sm:text-[10px] tracking-widest text-purple-400/90 uppercase font-medium">
+                        Software: {project.software}
+                      </div>
+                    )}
+                  </div>
                 </div>
-                </div>
+              </div>
               </a>
             ))}
           </div>
