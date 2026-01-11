@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Mail, Instagram, Youtube, Linkedin, ArrowRight, Sparkles, Facebook } from 'lucide-react';
+import { Play, Mail, Instagram, Youtube, Linkedin, ArrowRight, Sparkles, Facebook, ArrowUpRight } from 'lucide-react';
 
 export default function VideoEditorPortfolio() {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -205,35 +205,34 @@ export default function VideoEditorPortfolio() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 md:w-16 md:h-16 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 flex items-center justify-center scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500">
+                  {/* <div className="w-12 h-12 md:w-16 md:h-16 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 flex items-center justify-center scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500">
                     <Play className="w-5 h-5 md:w-6 md:h-6 rotate-90 group-hover:rotate-0 transition-transform duration-500" fill="white" />
-                  </div>
+                  </div> */}
                 </div>
                 {/* Project Info Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4 sm:p-6 md:p-8">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="text-[10px] sm:text-xs tracking-wider text-purple-400 mb-1">
-                    {project.category}
-                  </div>
-                  
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-light mb-1 leading-tight">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-[10px] sm:text-xs text-gray-400 mb-2 line-clamp-2 sm:line-clamp-none">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-col gap-0.5">
-                    <div className="text-[10px] sm:text-sm text-gray-500">
-                      {project.year}
-                    </div>
-                    
-                    {project.software && (
-                      <div className="text-[9px] sm:text-[10px] tracking-widest text-purple-400/90 uppercase font-medium">
-                        Software: {project.software}
-                      </div>
-                    )}
+              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 sm:p-6">
+  
+                {/* The Arrow Icon (Bottom Right) */}
+                <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 text-white/50 group-hover:text-purple-400 transition-colors duration-300">
+                  <ArrowUpRight size={24} className="transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                </div>
+
+                <div className="text-[10px] uppercase tracking-widest text-purple-400 mb-1">
+                  {project.category}
+                </div>
+                
+                <h3 className="text-lg font-light mb-1 pr-8 leading-tight">
+                  {project.title}
+                </h3>
+                
+                <p className="text-[10px] text-gray-400 mb-2 line-clamp-2 max-w-[85%]">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-col gap-0.5">
+                  <div className="text-[10px] text-gray-500">{project.year}</div>
+                  <div className="text-[9px] tracking-widest text-purple-400/80 uppercase">
+                    Software: {project.software}
                   </div>
                 </div>
               </div>
