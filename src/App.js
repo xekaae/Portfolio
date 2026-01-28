@@ -101,7 +101,7 @@ export default function VideoEditorPortfolio() {
       category: "Creative Edit",
       year: "2026",
       software: "After Effects",
-      thumbnail: "https://img.youtube.com/vi/-2iBaMAr69Y4/hqdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/2iBaMAr69Y4/maxresdefault.jpg",
       link: "https://www.youtube.com/shorts/2iBaMAr69Y4",
       description: "Jenna Ortega - Rouge Dior",
       scale: "scale-105"
