@@ -94,6 +94,17 @@ export default function VideoEditorPortfolio() {
       link: "https://www.youtube.com/watch?v=-QKYhcdNLCY",
       description: "Gameplay Introduction",
       scale: "scale-105"
+    },
+    {
+      id: 9,
+      title: "Fashion",
+      category: "Creative Edit",
+      year: "2026",
+      software: "After Effects 2025",
+      thumbnail: "https://img.youtube.com/vi/-2iBaMAr69Y4/maxresdefault.jpg",
+      link: "https://www.youtube.com/shorts/2iBaMAr69Y4",
+      description: "Jenna Ortega - Rouge Dior",
+      scale: "scale-105"
     }
   ];
 
