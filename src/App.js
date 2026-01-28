@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Mail, Instagram, Youtube, Linkedin, ArrowRight, Sparkles, Facebook, ArrowUpRight } from 'lucide-react';
+import {Mail, Instagram, Youtube, ArrowRight, Sparkles, Facebook, ArrowUpRight } from 'lucide-react';
 
 export default function VideoEditorPortfolio() {
-  const [hoveredProject, setHoveredProject] = useState(null);
+  // const [hoveredProject, setHoveredProject] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
